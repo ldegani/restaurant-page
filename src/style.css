@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  color: white;
+}
+
+#background {
+  position: absolute;
+  background-image: url("../src/img/coffeeshop.jpg");
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#content {
+  margin: 0 250px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 70px) repeat(2, 300px);
+  justify-items: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section {
+  margin: 2rem;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.45);
+  text-align: left;
+}
+
+img {
+  max-width: 150px;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  margin: 1rem;
+}
