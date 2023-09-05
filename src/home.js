@@ -1,28 +1,11 @@
 const homePageLoad = () => {
   const contentDiv = document.querySelector('#content');
-  
-  const headOne = document.createElement('h1');
-  headOne.textContent = 'My Coffee Site';
-  contentDiv.appendChild(headOne);
 
-  const pages = ['Home', 'About', 'Contact'];
-  const ulLinks = document.createElement('ul');
-  contentDiv.appendChild(ulLinks);
-  makeLinks();
-  
   const sectionOne = document.createElement('section');
   contentDiv.appendChild(sectionOne);
 
   const sectionTwo = document.createElement('section');
   contentDiv.appendChild(sectionTwo);
-  
-  function makeLinks() {
-    for (let i = 0; i < pages.length; i++) {
-      const li = document.createElement('li');
-      li.textContent = pages[i];
-      ulLinks.appendChild(li);
-    }
-  }
 
   const imgOne = document.createElement('img');
   imgOne.src = '../src/img/moka-black-coffee.jpg';
@@ -57,4 +40,4 @@ const homePageLoad = () => {
   sectionTwo.appendChild(imgTwo);
 }
 
-export default homePageLoad();
+export default homePageLoad;
