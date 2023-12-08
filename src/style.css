@@ -29,7 +29,9 @@ body {
   align-items: center;
 }
 
-h1 {
+h1,
+h2,
+a {
   text-align: center;
   color: white;
 }
@@ -50,7 +52,7 @@ section {
   justify-items: center;
   align-items: center;
   border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.75);
   text-align: left;
 }
 
@@ -65,4 +67,33 @@ span {
 
 .container-sections {
   margin: 1rem;
+}
+
+#menu-list {
+  flex-direction: column;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1d0a64;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }

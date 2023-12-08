@@ -1,5 +1,9 @@
+import headingLoad from './heading';
 import homePageLoad from './home.js';
 
-export default function pageLoad() {
+function pageLoad() {
+  headingLoad();
   homePageLoad();
 };
+
+export default pageLoad();
